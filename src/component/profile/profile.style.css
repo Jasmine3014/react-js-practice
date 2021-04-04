@@ -1,0 +1,18 @@
+.container {
+    width: 40%;
+    min-height: 50px;
+    padding: 20px;
+    margin-left: 28%;
+    padding-left: 58px;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    background: skyblue;
+}
+.userName {
+    text-transform: uppercase;
+    
+    
+}
+span{
+    color: #fff ;
+}

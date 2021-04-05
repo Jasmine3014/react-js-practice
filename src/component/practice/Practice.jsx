@@ -11,6 +11,26 @@ class Child extends Component {
     }
 }
 
+class ChildComponent extends Component {
+    render() {
+        return(
+            <div>
+                <h1>I am Child Component</h1>
+                <p>i don't know what to do</p>
+                {this.props.children}
+            </div>
+        );
+    }
+}
+// const ChildComponent = (props) => {
+//     <div>
+//         <h1>I am Child Component</h1>
+//         <p>i don't know what to do</p>
+//         {props.children}
+//     </div>
+    
+// }
+
 
 class Practice extends Component {
 
@@ -20,12 +40,17 @@ class Practice extends Component {
     }
 
     render() {
-        this.getContext(this);
+        // this.getContext(this);
 
         return(
             <div>
                 <h3 style={{textAlign: 'center', background: 'gray', padding: '8px'}}>This is my Practice ground...!!</h3>
-                <Child func={this.getContext} />
+                {/* <Child func={this.getContext} /> */}
+                <ChildComponent>
+                    <h1>I am Parent Component</h1>
+                    <p>i am child of child Component</p>
+                </ChildComponent>
+
             </div>
         );
     }

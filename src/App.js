@@ -18,7 +18,17 @@ class App extends Component {
         {/* <Practice /> */}
         <h4>Count value = {this.state.count}</h4>
         <button onClick={() =>{
-            this.setState({count: this.state.count +1})
+            this.setState(prev =>
+                {
+                    return{
+                        count : prev.count +1
+                    }
+                },()=>{
+            console.log('clicked',this.state.count);
+
+                })
+
+            
             // console.log('clicked',this.state.count);
 
 

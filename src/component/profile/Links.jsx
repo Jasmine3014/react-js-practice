@@ -6,16 +6,16 @@ const Links = (props) => (
         <h3>Social Links: </h3>
         <ul>
             <li>
-                <a href='#'>{props.linkA}</a>
+                <a href='https://www.facebook.com/jazzjassmin'>{props.linkA}</a>
             </li>
             <li>
-                <a href='#'>{props.linkB}</a>
+                <a href='https://twitter.com/JasmineAkter10'>{props.linkB}</a>
             </li>
             <li>
-                <a href='#'>{props.linkC}</a>
+                <a href='https://www.linkedin.com/in/jasmine-akter-05a9b41b1/'>{props.linkC}</a>
             </li>
             <li>
-                <a href='#'>{props.linkD}</a>
+                <a href='https://github.com/Jasmine3014'>{props.linkD}</a>
             </li>
         </ul>
     </div>
